@@ -13,24 +13,27 @@
 			<div class="container-fluid d-none d-md-flex">
 				<!-- name -->
 				<div class="col">
-					<h1>
+					<h1 class="m-2">
 						James Dunbar
 					</h1>
 				</div>
 
 				<!-- dropdown menu -->
 				<div class="col">
-					<div class="d-flex justify-content-end">
-						<div class="dropdown dropstart">
-							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-								<li><a class="dropdown-item" href="#">About Me</a></li>
-								<li><a class="dropdown-item" href="#">Experience</a></li>
-								<li><a class="dropdown-item" href="#">Personal Projects</a></li>
-								<li><a class="dropdown-item" href="#">University Projects</a></li>
-							</ul>
+					<div class="row">
+						<div class="col d-flex justify-content-end">
+							<button type="button" class="m-3 btn btn-secondary"><a class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="files/James Dunbar CV.pdf" download="James Dunbar CV.pdf">CV <i class="bi bi-download"></i></a></button>
+							<div class="dropdown dropstart m-3">
+								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+									<li><a class="dropdown-item" href="#aboutMeHeader">About Me</a></li>
+									<li><a class="dropdown-item" href="#personalProjectsHeader">Personal Projects</a></li>
+									<li><a class="dropdown-item" href="#universityProjectsHeader">University Projects</a></li>
+									<li><a class="dropdown-item" href="#contactMeHeader">Contact Me</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -49,54 +52,68 @@
 
 		<main class="p-3 pt-5 text-white">
 			<!-- About Me -->
-			<h2 class="pt-5 text-decoration-underline">
+			<h2 class="pt-5 text-decoration-underline" id="aboutMeHeader" style="scroll-margin-top:1em;">
 				About Me
 			</h2>
 			<p>
-				I&apos;m James&comma; a Computer Science student at the University of Dundee&period; My main currently involve low level programming, such as x86&hyphen;64 assembly and machine code&period;
+				I&apos;m James&comma; a second year BSc Computer Science student at the University of Dundee. My main computing interests currently involve low level programming.
+			</p>
+			<p>
+				My main skills at present are knowledge of C++, and low level knowledge of the x86 instruction set and its binary encoding.
+			</p>
+			<p>
+				Like so many other kids, I played games on computers from a young age. This eventually led me to discover <a href="https://scratch.mit.edu" class="link-underline-info text-white">Scratch</a>, which really kick started my interest in programming.
+				I started off with toy projects to gain an understanding of programming fundementals before learning Python as part of Computer Science in high school.
+			</p>
+			<p>
+				Learning Python made me want more performance and a more rigid structure in a program, so quite quickly, I decided to learn C++ as well. This led to many projects, the most useful to date being an assembler for x86/x64.
 			</p>
 
-			<!-- Projects -->
-			<h2 class="text-decoration-underline">
+			<!-- Personal Projects -->
+			<br/><br/><br/><br/><br/>
+			<h2 class="text-decoration-underline" id="personalProjectsHeader" style="scroll-margin-top:1em;">
 				Personal Projects
 			</h2>
 			<div class="row">
-				<div class="col text-center bg-dark card m-1">
+				<div class="col text-center bg-dark card m-1 pb-3">
 					<h3 class="card-title text-white p-3">GCLang</h3>
-					<p class="card-text text-white">A transpiler from a basic stack based language into C&plus;&plus;, then compiled into an executable</p>
-					<a href="https://github.com/im-made-of-jam/GCLang" class="btn btn-secondary">Github Repository</a>
+					<p class="card-text text-white">A transpiler from a basic stack based language into C++, then compiled into an executable. Written in C++ and assembly.</p>
+					<a href="https://github.com/im-made-of-jam/GCLang" class="btn btn-secondary mt-auto">Github Repository</a>
 				</div>
-				<div class="col text-center bg-dark card m-1">
+				<div class="col text-center bg-dark card m-1 pb-3">
 					<h3 class="card-title text-white p-3">x86-64 Assembler</h3>
-					<p class="card-text text-white">An assembler supporting a very limited subset of x86&hyphen;64 instructions. Eventually intended for use within a JIT compiler</p>
-					<a href="https://github.com/im-made-of-jam/x86-64-Assembler" class="btn btn-secondary">Github Repository</a>
+					<p class="card-text text-white">An assembler supporting a very limited subset of x86 and x86&hyphen;64 instructions, Eventually intended for use within a JIT compiler. Written in C++.</p>
+					<a href="https://github.com/im-made-of-jam/x86-64-Assembler" class="btn btn-secondary mt-auto">Github Repository</a>
 				</div>
 			</div>
 
-			<h2 class="text-decoration-underline">
+			<!-- University Projects -->
+			<br/><br/><br/><br/><br/>
+			<h2 class="text-decoration-underline" id="universityProjectsHeader" style="scroll-margin-top:1em;">
 				University Projects
 			</h2>
 			<div class="row">
-				<div class="col-sm-12 col-md text-center bg-dark card m-1">
+				<div class="col-sm-12 col-md text-center bg-dark card m-1 pb-3">
 					<img src="images/Scribble Home Screen.png" alt="The home page of the Scribble game" class="card-image-top"/>
 					<h5 class="card-title text-white">Scribble</h5>
-					<p class="card-text text-white">A collaborative project to make a game similar to Scrabble but with slightly different rules&period;</p>
+					<p class="card-text text-white">A collaborative project to make a game similar to Scrabble but with slightly different rules. Written in Java</p>
 				</div>
-				<div class="col-sm-12 col-md text-center bg-dark card m-1">
+				<div class="col-sm-12 col-md text-center bg-dark card m-1 pb-3">
 					<img src="images/Tom _ Jerry Recreation Home Page.png" alt="The home page of the Tom and Jerry recreation site" class="card-image-top"/>
 					<h5 class="card-title text-white">Tom &amp; Jerry Wikipedia Recreation</h5>
-					<p class="card-text text-white">A collaborative project to recreate the Wikipedia page for Tom &amp; Jerry, using the Bootstrap CSS Library&period;</p>
-					<a href="https://github.com/2634963/tom-and-jerry-website" class="btn btn-secondary">Github Repository</a>
+					<p class="card-text text-white">A collaborative project to recreate the Wikipedia page for Tom &amp; Jerry, using the Bootstrap CSS Library.</p>
+					<a href="https://github.com/2634963/tom-and-jerry-website" class="btn btn-secondary mt-auto">Github Repository</a>
 				</div>
-				<div class="col-sm-12 col-md text-center bg-dark card m-1">
+				<div class="col-sm-12 col-md text-center bg-dark card m-1 pb-3">
 					<img src="images/Team 5 Social Media cli.png" alt="The home page of the Social media program" class="card-image-top"/>
 					<h5 class="card-title text-white">A Social Media Implementation with CLI</h5>
-					<p class="card-text text-white">A collaborative project to make a program with basic social media capabilities&period;</p>
+					<p class="card-text text-white">A collaborative project to make a program with basic social media capabilities. Written in Java.</p>
 				</div>
 			</div>
 
 			<!-- links to various things -->
-			<h1 class="text-decoration-underline">
+			<br/><br/><br/><br/><br/>
+			<h1 class="text-decoration-underline" id="contactMeHeader" style="scroll-margin-top:1em;">
 				Contact Me / Other Platforms
 			</h1>
 			<ul class="list-group list-group-flush bg-transparent border-secondary">
